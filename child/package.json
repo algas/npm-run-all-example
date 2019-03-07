@@ -1,0 +1,15 @@
+{
+  "name": "child-dependencies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "hello": "echo 'helloooooo!!'",
+    "test": "echo \"Child: no test specified\""
+  },
+  "author": "Masahiro Yamauchi",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

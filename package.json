@@ -1,0 +1,27 @@
+{
+  "name": "npm-run-all-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all-install": "npm-run-all -p \"prefix:* -- install\"",
+    "all-test": "npm-run-all -s \"prefix:* -- test\"",
+    "all-p": "npm-run-all -p \"run:* -- {@}\"",
+    "all-s": "npm-run-all -p \"run:* -- {@}\"",
+    "all-p-hello": "npm run all-p hello",
+    "all-s-hello": "npm run all-s hello",
+    "prefix:self": "npm --prefix ./",
+    "prefix:child": "npm --prefix ./child",
+    "prefix:child2": "npm --prefix ./child2",
+    "run:self": "npm --prefix ./ run",
+    "run:child": "npm --prefix ./child run",
+    "run:child2": "npm --prefix ./child2 run",
+    "hello": "echo \"Hello world\"",
+    "test": "echo \"Test\""
+  },
+  "author": "Masahiro Yamauchi",
+  "license": "MIT",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

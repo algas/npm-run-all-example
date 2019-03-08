@@ -7,7 +7,7 @@
     "all-install": "npm-run-all -p \"prefix:* -- install\"",
     "all-test": "npm-run-all -s \"prefix:* -- test\"",
     "all-p": "npm-run-all -p \"run:* -- {@}\"",
-    "all-s": "npm-run-all -p \"run:* -- {@}\"",
+    "all-s": "npm-run-all -s \"run:* -- {@}\"",
     "all-p-hello": "npm run all-p hello",
     "all-s-hello": "npm run all-s hello",
     "prefix:self": "npm --prefix ./",
